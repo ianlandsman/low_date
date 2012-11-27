@@ -1,0 +1,18 @@
+{% import "_includes/forms" as forms %}
+
+<div class="datewrapper">
+	{{ forms.text({
+		name: name,
+		id: name,
+		value: dateValue
+	}) }}
+</div>
+
+{% set js %}
+	$('#blocks-{{ name }}').datepicker({
+		dateFormat: $.datepicker.W3C,
+		prevText: '{{ "Prev"|t|e('js') }}',
+		nextText: '{{ "Next"|t|e('js') }}'
+	});
+{% endset %}
+{% includeJs js %}
