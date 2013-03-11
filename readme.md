@@ -1,3 +1,3 @@
-# Low Date blocktype for Blocks CMS
+# Low Date fieldtype for Craft CMS
 
-Simple blocktype for storing dates.
+Simple fieldtype for storing dates.

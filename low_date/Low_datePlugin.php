@@ -1,11 +1,11 @@
 <?php
-namespace Blocks;
+namespace Craft;
 
-class LowDatePlugin extends BasePlugin
+class Low_datePlugin extends BasePlugin
 {
     function getName()
     {
-        return Blocks::t('Low Date');
+        return Craft::t('Low Date');
     }
 
     function getVersion()
@@ -15,7 +15,7 @@ class LowDatePlugin extends BasePlugin
 
     function getDeveloper()
     {
-        return 'Low';
+        return 'Lodewijk Schutte';
     }
 
     function getDeveloperUrl()
